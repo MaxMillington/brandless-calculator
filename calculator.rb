@@ -44,7 +44,7 @@ class Calculator
 
   def get_operator_variables(input)
     value = nil
-    value = input.match(/\(([^()]+)\)/)  if !input.include?('-') &&
+    value = input.match(/\(([^()]+)\)/) if !input.include?('-') &&
       !input.include?('+') && !input.include?('*') &&
       !input.include?('/')
     multiply_divide = input.match(/([0-9]*\.?[0-9]*)([\*\/])(-?[0-9]*\.?[0-9]*)/)
